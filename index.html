@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <!--Copied from google fonts and include css rules to specify font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+          rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kalam:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./assets/images/DimwitLogo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous" />
+    <title>Software Engineer | .NET Developer Portfolio</title>
+</head>
+<body class="background" id="body_section">
+    <header class="header">
+        <h2 class="visually-hidden">Header</h2>
+        <div class="wrapper">
+            <nav class="header__nav">
+                <h2 class="visually-hidden">Navigation</h2>
+                <a href="/" class="header__home">
+                    dimwit_techy
+                    <span class="visually-hidden">(to home page)</span>
+                </a>
+                <a href="https://github.com/nivitek" class="header__social">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="25"
+                         height="24"
+                         aria-labelledby="GitHub"
+                         role="img">
+                        <title id="GitHub">GitHub</title>
+                        <path fill="#676262"
+                              fill-rule="evenodd"
+                              d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/nivedha-kuppuram" class="header__social">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="25"
+                         height="24"
+                         aria-labelledby="LinkedIn"
+                         role="img">
+                        <title id="LinkedIn">LinkedIn</title>
+                        <path fill="#676262"
+                              fill-rule="evenodd"
+                              d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z" />
+                    </svg>
+                </a>
+                <a href="#" class="header__social">
+                    <?xml version="1.0" encoding="utf-8" ?>
+                    <svg width="25" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" aria-labelledby="Website" role="img">
+                        <title id="Website">Website</title>
+                        <path fill="#676262" d="M13.903 8c.06.629.097 1.292.097 2a1 1 0 01-2 0c0-.713-.039-1.378-.105-2H8.092c-.139 1.33-.14 2.67-.004 4H10a1 1 0 010 2H8.416c.469 2.08 1.202 3.41 1.585 4 0 0 .789.013.926.002a1.008 1.008 0 011.07.925 1 1 0 01-.924 1.07C10.979 20.004 10 20 10 20 4.486 20 0 15.514 0 10 0 4.485 4.486 0 10 0s10 4.485 10 10c0 .379-.036.749-.079 1.116a1.001 1.001 0 01-1.987-.233c.035-.291.066-.583.066-.883 0-.692-.098-1.36-.263-2h-3.834zM9.988 2.036c-.386.606-1.1 1.931-1.564 3.964h3.137c-.466-2.033-1.185-3.358-1.573-3.964zM2.263 12h3.819a21.604 21.604 0 01-.095-1.996c0-.67.033-1.338.096-2.004h-3.82A7.946 7.946 0 002 10a7.96 7.96 0 00.263 2zm.819 2a8.031 8.031 0 004.437 3.601A16.293 16.293 0 016.371 14H3.082zm3.291-8a16.235 16.235 0 011.15-3.603A8.03 8.03 0 003.082 6h3.291zm7.239 0h3.305a8.029 8.029 0 00-4.465-3.612A16.128 16.128 0 0113.612 6z" />
+                        <path fill="#676262" d="M15.223 18.945l-2.55-5.61a.5.5 0 01.662-.662l5.61 2.55a.5.5 0 01.017.903l-1.742.87a.5.5 0 00-.223.224l-.871 1.742a.5.5 0 01-.903-.017z" />
+                    </svg>
+                </a>
+                <a href="https://leetcode.com/NivedhaKuppuram" class="header__social">
+                    <?xml version="1.0" encoding="utf-8" ?>
+                    <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 22" aria-labelledby="LeetCode" role="img">
+                        <title id="LeetCode">LeetCode</title>
+                        <path d="M5.0333 14.8284L6.44751 16.2426L10.6902 12L6.44751 7.75733L5.0333 9.17155L7.86172 12L5.0333 14.8284Z" fill="#676262" />
+                        <path d="M15 14H11V16H15V14Z" fill="#676262" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2C0.895431 2 0 2.89543 0 4V20C0 21.1046 0.89543 22 2 22H22C23.1046 22 24 21.1046 24 20V4C24 2.89543 23.1046 2 22 2H2ZM22 4H2L2 20H22V4Z" fill="#676262" />
+                    </svg>
+                </a>
+                <div class="toggle"></div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="wrapper hero__wrapper bottom-border">
+                <div class="hero__content">
+                    <h2 class="visually-hidden">Profile Image</h2>
+                    <picture>
+                        <source media="(min-width: 62.5em)"
+                                srcset="/assets/images/profile.jpg" />
+                        <source media="(min-width: 37.5em)"
+                                srcset="/assets/images/profile.jpg" />
+                        <img class="hero__image"
+                             src="/assets/images/profile.jpg"
+                             alt="picture of Nivedha Kuppuram"
+                             width-="174"
+                             height="383" />
+                    </picture>
+                    <img class="hero__rings"
+                         src="/assets/images/pattern-rings.svg"
+                         alt=""
+                         width="530"
+                         height="129" />
+                    <img class="hero__circle"
+                         src="/assets/images/pattern-circle.svg"
+                         alt=""
+                         width="129"
+                         height="129" />
+                    <div class="hero__text">
+                        <h1 class="hero__headline header-xl">
+                            Happy to<span style="display:block"> have you here!</span>
+                            I'm <span class="textdec" style="font-family: 'Itim', cursive; font-weight:300;"></span>
+                        </h1>
+                        <p class="hero__description">
+                            I'm a Full Stack Developer. Passionate about
+                            building accessible, responsive web applications and websites. To know more about my experience,
+                            <a href="" title="About" style="text-decoration:none">touch me:)</a>
+                        </p>
+                        <a href="" title="Nivi_Resume" download="Nivi_Resume.pdf" class="hero__contact underline">Download Resume</a>
+                        <a href="mailto:nivedhageetha99@gmail.com" class="hero__contact underline">Contact me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper section__nav">
+            <ul class="lists__items underline">
+                <li class="list"><a href="#skills" class="hero__contact underline">Skills</a></li>
+                <li class="list"><a href="#projects" class="hero__contact underline">Projects</a></li>
+                <li class="list"><a href="#contact_me" class="hero__contact underline">Contact Form</a></li>
+            </ul>
+        </section>
+        <section class="wrapper skills bottom-border">
+            <div class="skills__topics" id="skills">Skills</div>
+            <div class="skills__wrapper">
+                <div class="skills__item">
+                    <h3 class="skills__title">C#</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">HTML</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">CSS</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">MySQL</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">SQL Server (MSSQL)</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">Azure DevOps</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">.NET</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">ASP.NET MVC</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">JavaScript</h3>
+                    <p class="skills__description">1 Year Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">GitHub</h3>
+                    <p class="skills__description">1 Year Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">Postman</h3>
+                    <p class="skills__description">1 Year Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">Figma</h3>
+                    <p class="skills__description">1 Year Experience</p>
+                </div>
+            </div>
+            <img class="skills__rings"
+                 src="/assets/images/pattern-rings.svg"
+                 alt=""
+                 width="530"
+                 height="129" />
+        </section>
+        <section class="wrapper skills bottom-border">
+            <div class="skills__topics">Tools | Platforms</div>
+            <div class="skills__wrapper">
+                <div class="skills__item">
+                    <h3 class="skills__title">Visual Studio 2016 or higher</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">SQL Server</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">IIS Web Sever</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">Sitecore Helix | Headless</h3>
+                    <p class="skills__description">2 Years Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">Visual Studio Code</h3>
+                    <p class="skills__description">1 Year Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">Coveo</h3>
+                    <p class="skills__description">1 Year Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">Jira</h3>
+                    <p class="skills__description">7 Months Experience</p>
+                </div>
+                <div class="skills__item">
+                    <h3 class="skills__title">Google Analytics</h3>
+                    <p class="skills__description">5 Months Experience</p>
+                </div>
+            </div>
+            <img class="skills__rings"
+                 src="/assets/images/pattern-rings.svg"
+                 alt=""
+                 width="530"
+                 height="129" />
+        </section>
+        <section class="projects">
+            <div class="wrapper projects__wrapper">
+                <div class="projects__grid">
+                    <h2 class="projects__headline header-xl" id="projects">Projects</h2>
+                    <a href="mailto:nivedhageetha99@gmail.com" class="projects__contact underline">Contact me</a>
+
+                    <div class="projects__item">
+                        <picture class="projects__picture">
+                            <source media="(min-width: 62.5em)"
+                                    srcset="/assets/images/thumbnail_password_generator.jpg" />
+                            <img class="projects__image"
+                                 src="/assets/images/thumbnail_password_generator.jpg"
+                                 alt="screenshot of automatic password generator with complex requirements website"
+                                 width-="343"
+                                 height="253" />
+                        </picture>
+                        <h3 class="projects__name">Password Generator</h3>
+                        <p class="projects__tags">
+                            <span>C#</span><span>|</span>
+                            <span>.NET</span>
+                        </p>
+                        <div class="projects__links">
+                            <a href="https://github.com/nivitek/Password_Generator" target="_blank" class="underline">View Project</a>
+                            <a href="https://github.com/nivitek/Password_Generator" target="_blank" class="underline">View Code</a>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <picture class="projects__picture">
+                            <source media="(min-width: 62.5em)"
+                                    srcset="/assets/images/thumbnail_mortgage.png" />
+                            <img class="projects__image"
+                                 src="/assets/images/thumbnail_mortgage.png"
+                                 alt="screenshot of mortgage calculator website"
+                                 width-="343"
+                                 height="253" />
+                        </picture>
+                        <h3 class="projects__name">Mortgage Calculator</h3>
+                        <p class="projects__tags">
+                            <span>ASP.NET MVC</span><span>|</span>
+                            <span>HTML</span><span>|</span>
+                            <span>CSS</span>
+                        </p>
+                        <div class="projects__links">
+                            <a href="https://github.com/nivitek/Mortgage-calculator" target="_blank" class="underline">View Project</a>
+                            <a href="https://github.com/nivitek/Mortgage-calculator" target="_blank" class="underline">View Code</a>
+                        </div>
+                    </div>
+
+                    <div class="projects__item">
+                        <picture class="projects__picture">
+                            <source media="(min-width: 62.5em)"
+                                    srcset="/assets/images/thumbnail_pioneerdj.jpg" />
+                            <img class="projects__image"
+                                 src="/assets/images/thumbnail_pioneerdj.jpg"
+                                 alt="screenshot of pioneer dj enhancement website"
+                                 width-="343"
+                                 height="253" />
+                        </picture>
+                        <h3 class="projects__name">Pioneer DJ</h3>
+                        <p class="projects__tags">
+                            <span>C#</span><span>|</span>
+                            <span>.NET</span><span>|</span>
+                            <span>Sitecore Helix</span><span>|</span>
+                            <span>HTML</span><span>|</span>
+                            <span>CSS</span><span>|</span>
+                            <span>JavaScript</span>
+                        </p>
+                        <div class="projects__links">
+                            <a href="https://www.pioneerdj.com/ja-jp/product/player/plx-500/black/overview/" target="_blank" class="underline">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="projects__item">
+                        <picture class="projects__picture">
+                            <source media="(min-width: 62.5em)"
+                                    srcset="/assets/images/thumbnail_dlapiper.jpg" />
+                            <img class="projects__image"
+                                 src="/assets/images/thumbnail_dlapiper.jpg"
+                                 alt="screenshot of dla piper website"
+                                 width-="343"
+                                 height="253" />
+                        </picture>
+                        <h3 class="projects__name">DLA Piper</h3>
+                        <p class="projects__tags">
+                            <span>Sitecore Headless</span><span>|</span>
+                            <span>HTML</span><span>|</span>
+                            <span>CSS</span><span>|</span>
+                            <span>JavaScript</span>
+                        </p>
+                        <div class="projects__links">
+                            <a href="https://www.dlapiper.com/en" target="_blank" class="underline">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="projects__item">
+                        <picture class="projects__picture">
+                            <source media="(min-width: 62.5em)"
+                                    srcset="/assets/images/thumbnail_huggies.jpg" />
+                            <img class="projects__image"
+                                 src="/assets/images/thumbnail_huggies.jpg"
+                                 alt="screenshot of huggies website"
+                                 width-="343"
+                                 height="253" />
+                        </picture>
+                        <h3 class="projects__name">Huggies</h3>
+                        <p class="projects__tags">
+                            <span>ASP.NET MVC(C#)</span><span>|</span>
+                            <span>Sitecore Helix</span><span>|</span>
+                            <span>HTML</span><span>|</span>
+                            <span>CSS</span><span>|</span>
+                            <span>JavaScript</span>
+                        </p>
+                        <div class="projects__links">
+                            <a href="https://www.huggies.com.au/products" target="_blank" class="underline">View Project</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <section id="contact" class="contact bg-less-dark">
+        <div class="wrapper contact__wrapper bottom-border">
+            <div class="contact__text">
+                <h2 class="contact__headline header-xl" id="contact_me">Contact</h2>
+                <p class="contact__description">
+                    I would love to hear about your project and how I could help.
+                    Please fill in the form, and I'll get back to you as soon as
+                    possible.
+                </p>
+            </div>
+            <form action="" class="contact__form" method="post" enctype="text/plain">
+                <div class="contact__control">
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Name"
+                           required=required
+                           autocomplete="off" />
+                    <img src="/assets/images/icon-invalid.svg"
+                         alt=""
+                         class="contact__invalid-icon"
+                         width="24"
+                         height="24" />
+                </div>
+                <div class="contact__control">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Email"
+                           required=required
+                           autocomplete="off" />
+                    <img src="/assets/images/icon-invalid.svg"
+                         alt=""
+                         class="contact__invalid-icon"
+                         width="24"
+                         height="24" />
+                </div>
+                <div class="contact__control">
+                    <label for="message" class="visually-hidden">Message</label>
+                    <textarea name="message"
+                              id="message"
+                              cols="30"
+                              rows="3"
+                              placeholder="Message"
+                              required=required></textarea>
+                    <img src="/assets/images/icon-invalid.svg"
+                         alt=""
+                         class="contact__invalid-icon"
+                         width="24"
+                         height="24" />
+                </div>
+                <div class="contact__control align-right">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+        <img class="contact__rings"
+             src="/assets/images/pattern-rings.svg"
+             alt=""
+             width="530"
+             height="129" />
+        <img class="contact__circle" src="./assets/images/pattern1.svg" width="100" height="100" />
+        <a href="#body_section" class="scroll__top" title="Scroll to top"></a>
+        <img class="contact__circle1" src="./assets/images/pattern1.svg" width="100" height="100" />
+    </section>
+    <footer class="footer bg-less-dark">
+        <h2 class="visually-hidden">Footer</h2>
+        <div class="wrapper">
+            <nav class="footer__nav">
+                <h2 class="visually-hidden">Navigation</h2>
+                <a href="/" class="footer__home">
+                    dimwit_techy
+                    <span class="visually-hidden">(to home page)</span>
+                </a>
+                <a href="https://github.com/nivitek" class="footer__social">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="25"
+                         height="24"
+                         aria-labelledby="GitHub"
+                         role="img">
+                        <title id="GitHub">GitHub</title>
+                        <path fill="#676262"
+                              fill-rule="evenodd"
+                              d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/nivedha-kuppuram" class="footer__social">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="25"
+                         height="24"
+                         aria-labelledby="LinkedIn"
+                         role="img">
+                        <title id="LinkedIn">LinkedIn</title>
+                        <path fill="#676262"
+                              fill-rule="evenodd"
+                              d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z" />
+                    </svg>
+                </a>
+                <a href="#" class="footer__social">
+                    <?xml version="1.0" encoding="utf-8" ?>
+                    <svg width="25" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" aria-labelledby="Website" role="img">
+                        <title id="Website">Website</title>
+                        <path fill="#676262" d="M13.903 8c.06.629.097 1.292.097 2a1 1 0 01-2 0c0-.713-.039-1.378-.105-2H8.092c-.139 1.33-.14 2.67-.004 4H10a1 1 0 010 2H8.416c.469 2.08 1.202 3.41 1.585 4 0 0 .789.013.926.002a1.008 1.008 0 011.07.925 1 1 0 01-.924 1.07C10.979 20.004 10 20 10 20 4.486 20 0 15.514 0 10 0 4.485 4.486 0 10 0s10 4.485 10 10c0 .379-.036.749-.079 1.116a1.001 1.001 0 01-1.987-.233c.035-.291.066-.583.066-.883 0-.692-.098-1.36-.263-2h-3.834zM9.988 2.036c-.386.606-1.1 1.931-1.564 3.964h3.137c-.466-2.033-1.185-3.358-1.573-3.964zM2.263 12h3.819a21.604 21.604 0 01-.095-1.996c0-.67.033-1.338.096-2.004h-3.82A7.946 7.946 0 002 10a7.96 7.96 0 00.263 2zm.819 2a8.031 8.031 0 004.437 3.601A16.293 16.293 0 016.371 14H3.082zm3.291-8a16.235 16.235 0 011.15-3.603A8.03 8.03 0 003.082 6h3.291zm7.239 0h3.305a8.029 8.029 0 00-4.465-3.612A16.128 16.128 0 0113.612 6z" />
+                        <path fill="#676262" d="M15.223 18.945l-2.55-5.61a.5.5 0 01.662-.662l5.61 2.55a.5.5 0 01.017.903l-1.742.87a.5.5 0 00-.223.224l-.871 1.742a.5.5 0 01-.903-.017z" />
+                    </svg>
+                </a>
+                <a href="https://leetcode.com/NivedhaKuppuram" class="footer__social">
+                    <?xml version="1.0" encoding="utf-8" ?>
+                    <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 22" aria-labelledby="LeetCode" role="img">
+                        <title id="LeetCode">LeetCode</title>
+                        <path d="M5.0333 14.8284L6.44751 16.2426L10.6902 12L6.44751 7.75733L5.0333 9.17155L7.86172 12L5.0333 14.8284Z" fill="#676262" />
+                        <path d="M15 14H11V16H15V14Z" fill="#676262" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2C0.895431 2 0 2.89543 0 4V20C0 21.1046 0.89543 22 2 22H22C23.1046 22 24 21.1046 24 20V4C24 2.89543 23.1046 2 22 2H2ZM22 4H2L2 20H22V4Z" fill="#676262" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    /*use other html file into an one html file(Placeholder)*/
+    fetch("./Components/ThemeToggle.html")
+        .then(response => {
+            return response.text()
+        })
+        .then(data => {
+            document.querySelector(".toggle").innerHTML = data;
+        });
+    //to turn background color to black and white
+    function toggle() {
+        const x = document.querySelector("#toggle__mode");
+        const y = document.querySelectorAll('.bg-less-dark');
+        if (x.checked == false) {
+            document.querySelector('.background').style.backgroundColor = "#ebebeb";
+            document.querySelector('.background').style.color = "#272525";
+            for (var i = 0; i < y.length; i++) {
+                y[i].style.backgroundColor = "#d4d1d1";
+            }
+            const z = document.querySelectorAll('p');
+            for (var n = 0; n < z.length; n++) {
+                z[n].style.color = "#272525";
+            }
+            const a = document.querySelectorAll('a');
+            for (var n = 0; n < a.length; n++) {
+                a[n].style.color = "#272525";
+            }            
+            document.querySelector('.hero__image').style.background = "conic-gradient(from 90deg at 2px 2px,#0000 25%,#000 0)";
+        }
+        else {
+            document.querySelector('.background').style.backgroundColor = "#272525";
+            document.querySelector('.background').style.color = "#ebebeb";
+            for (var i = 0; i < y.length; i++) {
+                y[i].style.backgroundColor = "#373535";
+            }
+            const z = document.querySelectorAll('p');
+            for (var n = 0; n < z.length; n++) {
+                z[n].style.color = "#c6c2c2";
+            }
+            const a = document.querySelectorAll('a');
+            for (var n = 0; n < a.length; n++) {
+                a[n].style.color = "#fff";
+            }
+            document.querySelector('.scroll__top').style.backgroundColor = "#fff";
+            document.querySelector('.hero__image').style.background = "conic-gradient(from 90deg at 1px 1px,#0000 25%,#fff 0)";
+        }
+    }
+    //Typing effect
+    var typingEffect = new Typed(".textdec", {
+        strings: ["Nivedha Kuppuram","a Software Engineer", "a .NET Developer", "a Web Developer"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500
+        })
+</script>
