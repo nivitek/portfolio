@@ -463,7 +463,7 @@ h1 > span.textdec {
 
 .skills__title {
   font-size: 2rem;
-  font-size: clamp(2rem, 0.33rem + 7.11vw, 3rem);
+  font-size: clamp(2rem, 0.33rem + 7.11vw, 2rem);
   line-height: 1.17;
   margin-block-end: 2px;
 }
