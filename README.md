@@ -13,6 +13,6 @@ Portfolio Design Website which describes and showcase about my work experience a
 
 Want to have a look onto the website? Click the below image
 
-<a href="https://nivitek.github.io/portfolio/" title="Click Me">
+<a href="https://nivitek.github.io/portfolio/" title="Click Me" target="_blank">
 <img src="./assets/images/portfolio_website.jpg" alt="Portfolio_website">
 </a>
