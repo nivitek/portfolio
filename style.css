@@ -562,6 +562,7 @@ h1 > span.textdec {
 
 .projects__tags {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
   margin-block-end: 20px;
@@ -981,17 +982,23 @@ img.contact__circle1 {
 /*Section Navigation*/
 .lists__items {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 20px 25px;
 }
 .lists__items li{
     list-style: none;
 }
-.lists__items li a{
-    font-size: 1.3rem;
-    letter-spacing: 3px;
-    color: var(--text2);
-    text-decoration: none;
-}
+    .lists__items li a {
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+        color: var(--text2);
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: #7e27db;
+        text-decoration-thickness: 3px;
+    }
     .lists__items li:hover a {
         color: var(--accent);
     }
