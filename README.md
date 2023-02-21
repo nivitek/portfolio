@@ -11,4 +11,8 @@ Portfolio Design Website which describes and showcase about my work experience a
 6. Email Functionality
 7. Projects Live URL embedded
 
+Want to have a look onto the website? Click the below image
+
+<a href="https://nivitek.github.io/portfolio/" title="Click Me">
 <img src="./assets/images/portfolio_website.jpg" alt="Portfolio_website">
+</a>
