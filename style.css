@@ -873,18 +873,13 @@ label:active::after{
   label img.sun__icon{
       left: 6px;
       top: 5px;
-      fill: #fff;
       transition: 0.4s;
   }
   label img.moon__icon{
       left: 50px;
       top: 5px;
-      fill: #fff;
       transition: 0.4s;
   }
-input:checked + label img.moon__icon{
-    fill: #fff;
-}
 @media(max-width: 28.125em) {
     label {
         left: -10px;
@@ -930,14 +925,12 @@ input:checked + label img.moon__icon{
         label img.sun__icon {
             left: 4px;
             top: 3px;
-            fill: #fff;
             transition: 0.4s;
         }
 
         label img.moon__icon {
             left: 28px;
             top: 3px;
-            fill: #fff;
             transition: 0.4s;
         }
 }
