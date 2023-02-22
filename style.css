@@ -714,7 +714,7 @@ h1 > span.textdec {
         padding-block: 16px;
         padding-inline: 24px;
         border: none;
-        border-bottom: 1px solid #ba471f;
+        border-bottom: 1px solid #7e27db;
         background: transparent;
         font-size: 1rem;
         line-height: 1.625;
@@ -722,7 +722,7 @@ h1 > span.textdec {
     }
 
     .contact__control > *::placeholder {
-        color: #ba471f;
+        color: #7e27db;
         opacity: 0.5;
         text-transform: uppercase;
     }
@@ -769,8 +769,12 @@ h1 > span.textdec {
   translate: -75%;
 }
 
+#char__counter{
+    text-align: right;
+}
+
 @media (min-width: 37.5em) {
-  .contact__rings {
+    .contact__rings {
     bottom: 47px;
     translate: -75%;
   }
@@ -860,35 +864,33 @@ input:checked + label:after{
 label:active::after{
     width: 50px;
 }
-label svg{
-    position: absolute;
-    width: 27px;
-    top: -381px;
-    z-index: 100;
-}
-label svg.sun__icon{
-    left: 6px;
-    top: -380px;
-    fill: #fff;
-    transition: 0.4s;
-}
-    label svg.moon__icon {
-        left: 49px;
-        fill: #6a6262;
-        transition: 0.4s;
-    }
-input:checked + label svg.sun__icon{
-    fill: #7e7e7e;
-}
-input:checked + label svg.moon__icon{
+  label img{
+      position: absolute;
+      width: 27px;
+      top: 0px;
+      z-index: 1;
+  }
+  label img.sun__icon{
+      left: 6px;
+      top: 5px;
+      fill: #fff;
+      transition: 0.4s;
+  }
+  label img.moon__icon{
+      left: 50px;
+      top: 5px;
+      fill: #fff;
+      transition: 0.4s;
+  }
+input:checked + label img.moon__icon{
     fill: #fff;
 }
 @media(max-width: 28.125em) {
     label {
         left: -10px;
         top: 0px;
-        width: 48px;
-        height: 27px;
+        width: 50px;
+        height: 26px;
         position: relative;
         display: inline-block;
         background: #ebebeb;
@@ -900,8 +902,8 @@ input:checked + label svg.moon__icon{
 
         label:after {
             content: "";
-            width: 21px;
-            height: 19px;
+            width: 18px;
+            height: 17px;
             position: absolute;
             top: 4px;
             left: 5px;
@@ -918,23 +920,24 @@ input:checked + label svg.moon__icon{
     label:active::after {
         width: 25px;
     }
-    label svg {
+    label img {
         position: absolute;
-        width: 17px;
-        top: -386px;
-        z-index: 100;
+        width: 20px;
+        top: 0px;
+        z-index: 1;
     }
 
-        label svg.sun__icon {
-            left: 6px;
-            top: -386px;
+        label img.sun__icon {
+            left: 4px;
+            top: 3px;
             fill: #fff;
             transition: 0.4s;
         }
 
-        label svg.moon__icon {
-            left: 29px;
-            fill: #6a6262;
+        label img.moon__icon {
+            left: 28px;
+            top: 3px;
+            fill: #fff;
             transition: 0.4s;
         }
 }

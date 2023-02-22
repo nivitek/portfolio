@@ -379,12 +379,12 @@
                     possible.
                 </p>
             </div>
-            <form action="" class="contact__form" method="post" enctype="text/plain">
+            <form action="mailto:nivedhageetha99@gmail.com" class="contact__form" method="post" enctype="text/plain" name="ContactForm">
                 <div class="contact__control">
                     <label for="name" class="visually-hidden">Name</label>
                     <input type="text"
                            id="name"
-                           name="name"
+                           name="Name"
                            placeholder="Name"
                            required=required
                            autocomplete="off" />
@@ -398,7 +398,7 @@
                     <label for="email" class="visually-hidden">Email</label>
                     <input type="email"
                            id="email"
-                           name="email"
+                           name="Email"
                            placeholder="Email"
                            required=required
                            autocomplete="off" />
@@ -410,12 +410,12 @@
                 </div>
                 <div class="contact__control">
                     <label for="message" class="visually-hidden">Message</label>
-                    <textarea name="message"
+                    <textarea name="Message: "
                               id="message"
-                              cols="30"
-                              rows="3"
                               placeholder="Message"
-                              required=required></textarea>
+                              required=required
+                              maxlength="500"></textarea>
+                    <div id="char__counter"></div>
                     <img src="./assets/images/icon-invalid.svg"
                          alt=""
                          class="contact__invalid-icon"
@@ -423,7 +423,7 @@
                          height="24" />
                 </div>
                 <div class="contact__control align-right">
-                    <button type="submit">Send Message</button>
+                    <button onclick="SubmitForm();" type="submit">Send Message</button>
                 </div>
             </form>
         </div>
@@ -546,5 +546,30 @@
         typeSpeed: 100,
         backSpeed: 80,
         backDelay: 1500
-        })
+    })
+    //Submit Contact Form
+    function SubmitForm() {
+        var link = "mailto:nivedhageetha99@gmail.com"
+            + "?cc=" + encodeURIComponent(document.getElementById('email').value)
+            + "&subject=" + encodeURIComponent("Contact Form - Portfolio Design")
+            + "&body=" + "Name: " + encodeURIComponent(document.getElementById('name').value) + "; "
+            + "Message: " + encodeURIComponent(document.getElementById('message').value);
+
+        window.location.href = link;
+    }
+    //Track Character Count for Textarea
+        const messageEle = document.getElementById('message');
+        const counterEle = document.getElementById('char__counter');
+
+        messageEle.addEventListener('input', function (e) {
+            const target = e.target;
+
+            // Get the `maxlength` attribute
+            const maxLength = target.getAttribute('maxlength');
+
+            // Count the current number of characters
+            const currentLength = target.value.length;
+
+            counterEle.innerHTML = `${currentLength}/${maxLength}`;
+        });
 </script>
