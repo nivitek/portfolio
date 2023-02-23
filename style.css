@@ -998,3 +998,39 @@ img.contact__circle1 {
     .lists__items li:hover a {
         color: var(--accent);
     }
+/*Menu Bar*/
+.menu {
+    position: fixed;
+    display: block;
+    cursor: pointer;
+    left: -47px;
+    top: 400px;
+}
+.menu__bar {
+    vertical-align: top;
+    transform: rotate(7deg);
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -moz-transform: rotate(90deg); /* Firefox */
+    -webkit-transform: rotate(90deg); /* Safari and Chrome */
+    -o-transform: rotate(90deg); /* Opera */
+}
+    .menu__bar li {
+        list-style: none;
+        box-shadow: inset 0px 0px 15px rgb(102 208 208 / 40%), inset 0px -5px 15px rgb(118 218 222 / 40%);
+    }
+        .menu__bar li a {
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            color: #8635db;
+            text-decoration: none;
+        }
+
+@media(max-width: 28.125em) {
+    .menu {
+        left: -40px;
+        top: 400px;
+    }
+    .menu__bar li a {
+        font-size: 1rem;
+    }
+}

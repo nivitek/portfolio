@@ -77,7 +77,7 @@
             </nav>
         </div>
     </header>
-
+    
     <main id="main">
         <section class="hero">
             <div class="wrapper hero__wrapper bottom-border">
@@ -110,9 +110,8 @@
                             I'm <span class="textdec" style="font-family: 'Itim', cursive; font-weight:300;"></span>
                         </h1>
                         <p class="hero__description">
-                            I'm a Full Stack Developer. Passionate about
-                            building accessible, responsive web applications and websites. To know more about my experience,
-                            <a href="" title="About" style="text-decoration:none">touch me:)</a>
+                            I'm a Full Stack Developer who handles both .NET and Web Technologies. Passionate about
+                            building accessible, responsive web applications and websites.                            
                         </p>
                         <a href="" title="Nivi_Resume" download="Nivi_Resume.pdf" class="hero__contact underline">Download Resume</a>
                         <a href="mailto:nivedhageetha99@gmail.com" class="hero__contact underline">Contact me</a>
@@ -120,6 +119,7 @@
                 </div>
             </div>
         </section>
+        <div class="menu"></div>
         <section class="wrapper section__nav">
             <ul class="lists__items underline">
                 <li class="list"><a href="#skills">Skills</a></li>
@@ -500,6 +500,13 @@
         })
         .then(data => {
             document.querySelector(".toggle").innerHTML = data;
+        });
+    fetch("./Components/Menu.html")
+        .then(response => {
+            return response.text()
+        })
+        .then(data => {
+            document.querySelector(".menu").innerHTML = data;
         });
     //to turn background color to black and white
     function toggle() {
