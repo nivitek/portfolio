@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\assets\\images"
+    "\\assets\\images",
+    "\\Components"
   ],
-  "SelectedNode": "\\assets\\images\\thumbnail_portfolio.jpg",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
