@@ -9,7 +9,7 @@ Portfolio Design Website which describes and showcase about my work experience a
 4. Background Theme Toggle
 5. Section Navigation
 6. Email Functionality
-7. Characte Count Tracker for Message Box
+7. Character Count Tracker for Message Box
 7. Projects Live URL embedded
 
 Want to have a look onto the website? Click the below image
