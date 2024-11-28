@@ -253,7 +253,7 @@ svg {
 }
 
 .hero__image {
-    margin-block-start: -70px;
+    margin-block-start: 20px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -337,7 +337,7 @@ h1 > span.textdec {
   }
 
     .hero__image {
-        margin-block-start: -100px;
+        margin-block-start: -70px;
         position: relative;
         width: 42vw;
         max-width: 445px;
@@ -406,7 +406,7 @@ h1 > span.textdec {
   }
 
     .hero__image {
-        margin-block-start: -199px;
+        margin-block-start: -20px;
     }
 
   .hero__rings {
