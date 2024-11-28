@@ -253,6 +253,7 @@ svg {
 }
 
 .hero__image {
+    margin-block-start: 70px;
     position: absolute;
     top: 0;
     left: 50%;
